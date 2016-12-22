@@ -1,6 +1,8 @@
+%define debug_package %{nil}
+
 Name:           thunderbird-extension-eds-calendar
 Version:        0.5
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Thunderbird extension to synchronize calendars with Evolution Data Server
 
 Group:          Applications/Internet
@@ -8,7 +10,6 @@ License:        GPLv2
 URL:            https://github.com/balbusm/xul-ext-eds-calendar
 Source0:        https://github.com/balbusm/xul-ext-eds-calendar/archive/0.5.tar.gz
 
-BuildArch:      noarch
 Requires:       thunderbird
 
 %description
@@ -31,5 +32,8 @@ cp -p output/xul-ext-eds-calendar.xpi $RPM_BUILD_ROOT/%{_libdir}/thunderbird/ext
 %{_libdir}/thunderbird/extensions/*.xpi
 
 %changelog
+* Thu Dec 22 2016 Ricardo Arguello <rarguello@deskosproject.org> - 0.5-2
+- Removed BuildArch: noarch
+
 * Sun Dec 18 2016 Ricardo Arguello <rarguello@deskosproject.org> - 0.5-1
 - Initial release for DeskOS
