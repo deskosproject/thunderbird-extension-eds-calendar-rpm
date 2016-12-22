@@ -1,0 +1,5 @@
+= DeskOS: thunderbird-extension-eds-calendar RPM
+
+This is the _thunderbird-extension-eds-calendar_ RPM package for the *DeskOS* operating system.
+
+Upstream comes from https://github.com/balbusm/xul-ext-eds-calendar
